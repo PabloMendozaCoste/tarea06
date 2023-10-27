@@ -1,0 +1,35 @@
+ion-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  ion-button {
+    background-color: #007bff;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  ion-card {
+    margin-top: 20px;
+  }
+
+  ion-card-content {
+    color:azure;
+    text-align: center;
+  }
+
+  ion-card-content p {
+    font-size: 18px;
+  }
+
+  ion-card-content p.estado {
+    font-weight: bold;
+    color: #007bff;
+  }
+
+  ion-img {
+    width: auto;
+    height: 300px;
+    margin: 20px auto;
+  }
+  

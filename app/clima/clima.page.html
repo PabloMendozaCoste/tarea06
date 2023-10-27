@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Información del Clima</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngIf="climaData">
+    <ion-card-content>
+      <h2>Información del Clima</h2>
+      <p><b>Ciudad:</b> {{ climaData.name }}</p>
+      <p><b>Temperatura:</b> {{ temperaturaCelsius | number: '1.0-1' }} °C</p>
+      <p><b>Descripción:</b> {{ climaData.weather[0].description }}</p>
+      <p><b>Humedad:</b> {{ climaData.main.humidity }}%</p>
+      <p><b>Velocidad del Viento:</b> {{ climaData.wind.speed }} m/s</p>
+      <p><b>Lugar de la Medición:</b> {{ climaData.sys.country }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

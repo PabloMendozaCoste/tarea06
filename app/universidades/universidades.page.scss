@@ -1,0 +1,38 @@
+ion-header {
+    --ion-background-color: #007BFF; 
+    color: white; 
+  }
+
+  ion-item, ion-button {
+    margin: 10px 0;
+  }
+
+  ion-item {
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  ion-label h2 {
+    font-size: 1.5em; 
+    color:azure; 
+  }
+
+  ion-label b { 
+    color:azure; 
+  }
+
+  ion-label p {
+    color: rgb(204, 204, 204);
+    margin: 5px 0;
+  }
+
+  ion-label a {
+    color: #007BFF; 
+  }
+
+  ion-button {
+    --background: #007BFF; 
+    --color: white; 
+  }
+  

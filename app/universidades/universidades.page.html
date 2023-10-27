@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Universidades por País</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Nombre del País</ion-label>
+    <ion-input [(ngModel)]="countryName" placeholder="Ingrese el nombre del país"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="buscarUniversidades()">Buscar Universidades</ion-button>
+
+  <ion-list *ngIf="universities.length > 0">
+    <ion-item *ngFor="let university of universities">
+      <ion-label>
+        <h2>{{ university.name }}</h2>
+        <p><b>País:</b> {{ university.country }}</p>
+        <p><b>Dominio:</b> {{ university.domains[0] }}</p>
+        <p><b>Enlace a la página web:</b> <a [href]="university.web_pages[0]">{{ university.web_pages[0] }}</a></p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

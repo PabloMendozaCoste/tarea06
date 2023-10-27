@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo-pagina">Predicción de Género</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label class="etiqueta-nombre" position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="nombre" placeholder="Ingrese un nombre"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="predecirGenero()" class="boton-predecir">Predecir Género</ion-button>
+
+  <ion-card *ngIf="generoPredicho">
+    <ion-card-content>
+      <h2 >Resultado:</h2>
+      <p [ngClass]="generoClase">El nombre de {{ nombre }} es del género {{ generoPredicho }}.</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
